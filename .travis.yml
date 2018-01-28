@@ -4,7 +4,10 @@ sudo: false
 addons:
   apt:
     packages:
-    - texlive-full
+    - texlive
+
+install:
+  - tlmgr install moderncv
 
 before_script:
   - git config --global user.name \"Travis CI\"
@@ -12,9 +15,9 @@ before_script:
   - git remote add origin-travis https://${GITHUB_TOKEN}@github.com/bjk17/bjk.is.git
 
 script:
-  pdflatex cv.tex && pdflatex cv.tex
-  sed -e 's/^%~ //' cv.tex > cv-full.tex
-  pdflatex cv-full.tex && pdflatex cv-full.tex
+  - pdflatex cv.tex && pdflatex cv.tex
+  - sed -e 's/^%~ //' cv.tex > cv-full.tex
+  - pdflatex cv-full.tex && pdflatex cv-full.tex
 
 after_script:
   - git add cv.pdf cv-full.pdf
