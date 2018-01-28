@@ -4,9 +4,7 @@ sudo: false
 addons:
   apt:
     packages:
-    - texlive
-    - texlive-latex-extra
-    - texlive-latex-recommended
+    - texlive-full
 
 before_script:
   - git config --global user.name \"Travis CI\"
