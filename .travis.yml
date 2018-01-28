@@ -1,3 +1,5 @@
+language: generic
+
 dist: trusty
 sudo: false
 
@@ -18,7 +20,7 @@ script:
 
 after_script:
   - git add cv.pdf cv-full.pdf
-  - git commit --message \"Travis build: $TRAVIS_BUILD_NUMBER\"
+  - git commit --message \"Travis build $TRAVIS_BUILD_NUMBER\"
   - git push --quiet --set-upstream origin-travis master
 
 notifications:
