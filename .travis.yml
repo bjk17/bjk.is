@@ -1,5 +1,10 @@
-language: r
-latex: true
+dist: trusty
+sudo: false
+
+addons:
+  apt:
+    packages:
+    - texlive
 
 before_script: >
   git config --global user.name "Travis CI";
