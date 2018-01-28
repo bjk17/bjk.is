@@ -5,9 +5,7 @@ addons:
   apt:
     packages:
     - texlive
-
-install:
-  - tlmgr install moderncv
+    - texlive-latex-extra
 
 before_script:
   - git config --global user.name \"Travis CI\"
