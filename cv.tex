@@ -1,0 +1,149 @@
+%% start of file `cv.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% moderncv themes
+\moderncvstyle{casual}
+\moderncvcolor{orange}
+
+% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[icelandic,english]{babel}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+% personal data
+\name{Bjarni Jens}{Kristinsson}
+\title{Curriculum Vitae}
+\address{Uilenstede 168}{1183AP Amstelveen}{Netherlands}
+\phone[mobile]{+354~698~1423}
+\email{bjarni.jens@gmail.com}
+\homepage{bjk.is}
+\social[linkedin]{bjk17}
+\social[github]{bjk17}
+\extrainfo{Last updated on \today}
+\photo[64pt][0.4pt]{me.jpg}
+%~ \quote{"It is quality rather than quantity that matters."\\
+%~  \emph{-Lucius Annaeus Seneca,} Moral Letters to Lucilius}
+
+
+\begin{document}
+\makecvtitle
+
+\section{Education}
+\cventry{2017 -- \emph{curr.}}{M.Sc.\@ in Computer Science}{Vrije Universiteit 
+Amsterdam}{Netherlands}{} {Joint program with University of Amsterdam, Parallel
+Computing Systems track. Elective courses in the field of theoretical Computer 
+Science and Mathematics.}
+\cventry{2012 -- 2015}{B.Sc.\@ in Mathematics}{University of Iceland}{Reykjavik}
+{\textit{8,55} (out of 10)} {Specialization in Computer Science. Elective courses
+in subjects such as algorithms, probability theory, combinatorics and graph theory. 
+President of the student union Stigull during the school year 2013-14.}
+%~ \cventry{2007 -- 2011}{Stúdentspróf}{Reykjavik Junior College}{Reykjavik}
+%~ {\textit{7,89} (out of 10)}{Physics department. Received an acknowledgement 
+%~ for excellent results in Mathematics at graduation. Voted class councillor 
+%~ in final year.}
+
+\section{Development tools}
+\cvitem{Languages}{Java, Python}
+\cvitem{DevOps}{Linux, Docker, LXD, Jenkins, Travis, Bash}
+\cvitem{Other}{SQL, Octave/MatLab, R, \LaTeX}
+
+\section{Work experience}
+\cventry{2015 -- 2017}{Software Developer}{WuXi NextCODE}{Reykjavik}{Iceland}
+{Joined the company at an early stage when it was expanding very fast.
+Started off in DevOps like assignments of maintaining, executing and 
+further developing deployment (Chef, Ansible) and infrastructure (AWS 
+CloudFormation, Terraform) code. Handed it over to a newly created Backend 
+Group and joined the Data Group. Developed Python code to import and process 
+genomic data in our system and integrating 3rd party platforms with ours.
+Built, tested and deployed components in CI/CD loops using tools such as
+Jenkins, Docker and Ansible.}
+%~ \cventry{May -- July 2015}{Software Developer}{Handpoint}{Kopavogur}{Iceland}
+%~ {Implementing protocols with partners and developing card reader software. 
+%~ Quit because the job turned out to be different and not as demanding as 
+%~ promised in the interviewing process.}
+\cventry{Summer 2014}{Software Developer}{Invector}{Reykjavik}{Iceland}
+{Developing a web app for clients using Invector's statistical model to estimate 
+prices of real estates worldwide. Working primarily on designing the database, 
+the user system and other backend programming.}
+\cventry{Summer 2013}{Software Developer}{Reykjavik Energy}{Reykjavik}{Iceland}
+{Brought in to program an interactive educational game about Reykjavik Energy's
+CarbFix project. Worked with three Master's students who designed the game and
+wrote the educational material. Coded the game in raw JavaScript using images
+and graphics drawn and provided by them.}
+%~ \cventry{Summer 2013}{Web programming}{Reconesse}{Reykjavik}{}
+%~ {Together with two other university students we developed an 
+%~ interactive educational game about interesting female role models in 
+%~ women's right history for their website. The project received a 
+%~ grant from Rannís' Icelandic Student Innovation Fund.}
+
+\section{Bachelor thesis}
+\cvitem{title}{Occurrence graphs of patterns in permutations}
+\cvitem{supervisor}{Henning Ulfarsson, postdoctoral researcher at Reykjavik University}
+\cvitem{abstract}{This paper is based on a generalization of the 
+idea behind the proof of the \emph{Simultaneous Shading Lemma} by 
+Claesson et al.\@ (2014). We define the \emph{occurrence graph} 
+$G_p(\pi)$ of a pattern $p$ in a permutation $\pi$ as the graph with 
+the occurrences of $p$ in $\pi$ as vertices and edges between the 
+vertices if the occurrences differ by exactly one element. We study 
+the general properties of the occurrence graphs and some interesting 
+extreme cases. The main theorem in this paper is that every \emph
+{hereditary property} of graphs produces a \emph{permutation class}.}
+\cvitem{url}{\url{http://hdl.handle.net/1946/22017}}
+\cvitem{url}{\url{https://arxiv.org/abs/1607.03018} \emph{(with additions from Henning)}}
+
+\section{Teaching}
+\cventry{Fall 2013}{Assistant Teacher}{University of Iceland}{Reykjavik}{}
+{Teaching assistant in a Linear Algebra course.}
+\cventry{2012 -- 2014}{More teaching}{Various employers}{Reykjavik}{}
+{I have taught a computer science class for the Youth University
+(summer 2013), revision courses in mathematics for Nobel tutoring Ltd.
+(2012 -- 2013) as well as I have had many students for private tutoring
+in mathematics (2012 -- 2014).}
+
+\section{Interests}
+\cvitem{tech}{Recent hands-on hobby projects include autonomous
+    Raspberry Pis hosting websites and recording timelapses. Set
+    up \url{blog.bjk.is} to document some of it. Manage my own VPS
+    hosting websites and experimenting with various webservices.}
+\cvitem{math}{I am deeply intrigued by the concept of infinity
+    and I take joy in intuitive proofs by contradiction. During 
+    junior college I participated in many mathematics competitions 
+    and twice I was selected to compete with the national team in 
+    Baltic Way.}
+\cvitem{chess}{For many years I studied chess and I achieved a peak 
+    ELO rating of 2062. In 2007 I became national champion U20 and 
+    in 2009 I played in the World Youth Chess Championship held in 
+    Antalya, Turkey. Twice I became Nordic champion and three times 
+    national champion with my junior college chess team. I have 
+    tought chess in various elementary schools and organized my own 
+    summer chess workshops.}
+\cvitem{sports}{I like to lift weights, play football and bike to 
+    keep me in shape and in good health. I also bike to commute. In 
+    the summer of 2012 my friend and I went on a 2 month biking tour 
+    through Europe, visiting six countries and bicycling over 1600 km.}
+
+%~ \section{Languages}
+%~ \cvitemwithcomment{Icelandic}{native language}{}
+%~ \cvitemwithcomment{Swedish}{fluent}{I lived in Sweden for ten years}
+%~ \cvitemwithcomment{English}{full professional proficiency}{}
+%~ \cvitemwithcomment{French}{beginner level}{}
+
+
+\section{References}
+\cvitem{}{Available upon request.}
+
+
+\end{document}
+
+
+%% end of file `cv.tex'.
