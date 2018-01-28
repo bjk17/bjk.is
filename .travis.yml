@@ -6,6 +6,7 @@ addons:
     packages:
     - texlive
     - texlive-latex-extra
+    - texlive-latex-recommended
 
 before_script:
   - git config --global user.name \"Travis CI\"
