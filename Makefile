@@ -9,7 +9,7 @@ cv.pdf: cv.tex
 	pdflatex cv.tex
 
 cv-full.pdf: cv.tex
-	sed -e 's/^%~ //' cv.tex > cv-full.tex
+	sed -e 's/^%~ //' -e '/^{}/d' cv.tex > cv-full.tex
 	pdflatex cv-full.tex
 	pdflatex cv-full.tex
 	rm -f cv-full.tex
